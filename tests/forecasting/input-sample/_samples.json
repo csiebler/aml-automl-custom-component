@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2020-01-01",
+    "weather": "cloudy"
+  },
+  {
+    "date": "2020-01-02",
+    "weather": "rainy"
+  },
+  {
+    "date": "2020-01-03",
+    "weather": "rainy"
+  }
+]

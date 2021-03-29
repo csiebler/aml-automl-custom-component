@@ -8,12 +8,16 @@ from azureml.core import Workspace, Experiment, Run
 from azureml.studio.core.io.data_frame_directory import load_data_frame_from_directory, save_data_frame_to_directory
 
 # Parse args
-parser = argparse.ArgumentParser("AutoML-Scoring")
-parser.add_argument("--input_data", type=str, help="Input data")
-parser.add_argument("--predictions_data", type=str, help="Predictions data")
-parser.add_argument("--experiment", type=str, help="AutoML experiment name")
-parser.add_argument("--run_id", type=str, help="Run Id")
-args = parser.parse_args()
+def parse_args(argv=None):
+    parser = argparse.ArgumentParser("AutoML-Scoring")
+    parser.add_argument("--input_data", type=str, help="Input data")
+    parser.add_argument("--predictions_data", type=str, help="Predictions data")
+    parser.add_argument("--experiment", type=str, help="AutoML experiment name")
+    parser.add_argument("--run_id", type=str, help="Run Id")
+    return parser.parse_args(argv)
+
+
+args = parse_args()
 
 # Load data that needs to be scored
 df = load_data_frame_from_directory(args.input_data).data
@@ -49,14 +53,14 @@ print("Using model to score input data...")
 
 if (isForecasting):
     y_query = None
-    if 'y_query' in data.columns:
-        y_query = data.pop('y_query').values
+    if 'y_query' in df.columns:
+        y_query = df.pop('y_query').values
     results = model.forecast(df, y_query)
+    results_df = pd.DataFrame(results[0], columns=['Predictions'])
 else:
     results = model.predict(df)
-
-results_df = pd.DataFrame(results, columns=['Predictions'])
-
+    results_df = pd.DataFrame(results, columns=['Predictions'])
+    
 print("This is how your data looks like:")
 print(results_df.head())
 

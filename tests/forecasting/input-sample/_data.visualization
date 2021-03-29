@@ -1,0 +1,166 @@
+{
+  "visualizationType": "default",
+  "data": {
+    "name": null,
+    "numberOfColumns": 2,
+    "numberOfRows": 4,
+    "features": [
+      {
+        "name": "date",
+        "index": 0,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "weather",
+        "index": 1,
+        "elementType": "str",
+        "featureType": "String Feature"
+      }
+    ],
+    "records": [
+      [
+        "2020-01-01",
+        "cloudy"
+      ],
+      [
+        "2020-01-02",
+        "rainy"
+      ],
+      [
+        "2020-01-03",
+        "rainy"
+      ],
+      [
+        "2020-01-04",
+        "cloudy"
+      ]
+    ]
+  },
+  "statistics": {
+    "name": null,
+    "numberOfColumns": 7,
+    "numberOfRows": 2,
+    "features": [
+      {
+        "name": "Mean",
+        "index": 0,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Median",
+        "index": 1,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Min",
+        "index": 2,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Max",
+        "index": 3,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Standard Deviation",
+        "index": 4,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Unique Values",
+        "index": 5,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Missing Values",
+        "index": 6,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      }
+    ],
+    "records": [
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ]
+    ]
+  },
+  "layout": {
+    "name": null,
+    "numberOfColumns": 2,
+    "numberOfRows": 2,
+    "features": [
+      {
+        "name": "Histogram",
+        "index": 0,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      },
+      {
+        "name": "Boxplot",
+        "index": 1,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      }
+    ],
+    "records": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ]
+    ]
+  }
+}
