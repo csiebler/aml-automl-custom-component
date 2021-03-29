@@ -5,7 +5,8 @@ display_name: AutoML Scoring
 type: CommandComponent
 is_deterministic: true
 tags:
-  type : Inferencing
+  AutoML:
+  Scoring:
 inputs:
   input_data:
     type: DataFrameDirectory

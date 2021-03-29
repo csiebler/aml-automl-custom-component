@@ -21,26 +21,36 @@ df = load_data_frame_from_directory(args.input_data).data
 # Get AutoML run
 run = Run.get_context()
 if (isinstance(run, azureml.core.run._OfflineRun)):
-    print("Offline run")
     ws = Workspace.from_config()
 else:
     ws = run.experiment.workspace
     
-print(ws)
+print(f"Retrieved access to workspace {ws}")
 
-experiment = Experiment(ws, args.experiment)
-automl_run = Run(experiment, args.run_id)
+try:
+    experiment = Experiment(ws, args.experiment)
+    automl_run = Run(experiment, args.run_id)
+    properties = automl_run.properties
+except Exception as e:
+    raise
 
+if (properties['runTemplate'] != "automl_child"):
+    raise RuntimeError(f"Run with run_id={args.run_id} is a not an AutoML run!")
+
+print("Downloading AutoML model...")
 automl_run.download_file('outputs/model.pkl', output_file_path='./')
 model_path = './model.pkl'
 model = joblib.load(model_path)
 
 # Score data
+print("Using model to score input data...")
 results = model.predict(df)
 results_df = pd.DataFrame(results, columns=['Predictions'])
 
+print("This is how your data looks like:")
 print(results_df.head())
 
 # Write results back
+print("Writing predictions back...")
 os.makedirs(args.predictions_data, exist_ok=True)
 save_data_frame_to_directory(args.predictions_data, results_df)
