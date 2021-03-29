@@ -37,6 +37,8 @@ except Exception as e:
 if (properties['runTemplate'] != "automl_child"):
     raise RuntimeError(f"Run with run_id={args.run_id} is a not an AutoML run!")
 
+isForecasting = ('fitted_pipeline' in automl_run.properties and automl_run.properties['fitted_pipeline'].startswith('ForecastingPipelineWrapper'))
+
 print("Downloading AutoML model...")
 automl_run.download_file('outputs/model.pkl', output_file_path='./')
 model_path = './model.pkl'
@@ -44,7 +46,12 @@ model = joblib.load(model_path)
 
 # Score data
 print("Using model to score input data...")
-results = model.predict(df)
+
+if (isForecasting):
+    results = model.forecast(df)
+else:
+    results = model.predict(df)
+
 results_df = pd.DataFrame(results, columns=['Predictions'])
 
 print("This is how your data looks like:")
