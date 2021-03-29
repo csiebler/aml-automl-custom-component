@@ -1,5 +1,5 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
-name: AutoML Scoring
+name: automl_scoring
 version: 0.0.1
 display_name: AutoML Scoring
 type: CommandComponent
