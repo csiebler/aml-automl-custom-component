@@ -1,0 +1,1593 @@
+{
+  "visualizationType": "default",
+  "data": {
+    "records": [
+      [
+        67,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        "little",
+        1169,
+        6,
+        "radio/TV"
+      ],
+      [
+        22,
+        "female",
+        2,
+        "own",
+        "little",
+        "moderate",
+        5951,
+        48,
+        "radio/TV"
+      ],
+      [
+        49,
+        "male",
+        1,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        2096,
+        12,
+        "education"
+      ],
+      [
+        45,
+        "male",
+        2,
+        "free",
+        "little",
+        "little",
+        7882,
+        42,
+        "furniture/equipment"
+      ],
+      [
+        53,
+        "male",
+        2,
+        "free",
+        "little",
+        "little",
+        4870,
+        24,
+        "car"
+      ],
+      [
+        35,
+        "male",
+        1,
+        "free",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        9055,
+        36,
+        "education"
+      ],
+      [
+        53,
+        "male",
+        2,
+        "own",
+        "quite rich",
+        {
+          "isNan": true
+        },
+        2835,
+        24,
+        "furniture/equipment"
+      ],
+      [
+        35,
+        "male",
+        3,
+        "rent",
+        "little",
+        "moderate",
+        6948,
+        36,
+        "car"
+      ],
+      [
+        61,
+        "male",
+        1,
+        "own",
+        "rich",
+        {
+          "isNan": true
+        },
+        3059,
+        12,
+        "radio/TV"
+      ],
+      [
+        28,
+        "male",
+        3,
+        "own",
+        "little",
+        "moderate",
+        5234,
+        30,
+        "car"
+      ],
+      [
+        25,
+        "female",
+        2,
+        "rent",
+        "little",
+        "moderate",
+        1295,
+        12,
+        "car"
+      ],
+      [
+        24,
+        "female",
+        2,
+        "rent",
+        "little",
+        "little",
+        4308,
+        48,
+        "business"
+      ],
+      [
+        22,
+        "female",
+        2,
+        "own",
+        "little",
+        "moderate",
+        1567,
+        12,
+        "radio/TV"
+      ],
+      [
+        60,
+        "male",
+        1,
+        "own",
+        "little",
+        "little",
+        1199,
+        24,
+        "car"
+      ],
+      [
+        28,
+        "female",
+        2,
+        "rent",
+        "little",
+        "little",
+        1403,
+        15,
+        "car"
+      ],
+      [
+        32,
+        "female",
+        1,
+        "own",
+        "moderate",
+        "little",
+        1282,
+        24,
+        "radio/TV"
+      ],
+      [
+        53,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        2424,
+        24,
+        "radio/TV"
+      ],
+      [
+        25,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        "little",
+        8072,
+        30,
+        "business"
+      ],
+      [
+        44,
+        "female",
+        3,
+        "free",
+        "little",
+        "moderate",
+        12579,
+        24,
+        "car"
+      ],
+      [
+        31,
+        "male",
+        2,
+        "own",
+        "quite rich",
+        {
+          "isNan": true
+        },
+        3430,
+        24,
+        "radio/TV"
+      ],
+      [
+        48,
+        "male",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        2134,
+        9,
+        "car"
+      ],
+      [
+        44,
+        "male",
+        2,
+        "rent",
+        "quite rich",
+        "little",
+        2647,
+        6,
+        "radio/TV"
+      ],
+      [
+        48,
+        "male",
+        1,
+        "rent",
+        "little",
+        "little",
+        2241,
+        10,
+        "car"
+      ],
+      [
+        44,
+        "male",
+        2,
+        "own",
+        "moderate",
+        "moderate",
+        1804,
+        12,
+        "car"
+      ],
+      [
+        26,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        2069,
+        10,
+        "furniture/equipment"
+      ],
+      [
+        36,
+        "male",
+        1,
+        "own",
+        "little",
+        "little",
+        1374,
+        6,
+        "furniture/equipment"
+      ],
+      [
+        39,
+        "male",
+        1,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        426,
+        6,
+        "radio/TV"
+      ],
+      [
+        42,
+        "female",
+        2,
+        "rent",
+        "rich",
+        "rich",
+        409,
+        12,
+        "radio/TV"
+      ],
+      [
+        34,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        2415,
+        7,
+        "radio/TV"
+      ],
+      [
+        63,
+        "male",
+        2,
+        "own",
+        "little",
+        "little",
+        6836,
+        60,
+        "business"
+      ],
+      [
+        36,
+        "male",
+        2,
+        "own",
+        "rich",
+        "moderate",
+        1913,
+        18,
+        "business"
+      ],
+      [
+        27,
+        "male",
+        2,
+        "own",
+        "little",
+        "little",
+        4020,
+        24,
+        "furniture/equipment"
+      ],
+      [
+        30,
+        "male",
+        2,
+        "own",
+        "moderate",
+        "moderate",
+        5866,
+        18,
+        "car"
+      ],
+      [
+        57,
+        "male",
+        1,
+        "rent",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        1264,
+        12,
+        "business"
+      ],
+      [
+        33,
+        "female",
+        3,
+        "own",
+        "little",
+        "rich",
+        1474,
+        12,
+        "furniture/equipment"
+      ],
+      [
+        25,
+        "male",
+        1,
+        "own",
+        "little",
+        "moderate",
+        4746,
+        45,
+        "radio/TV"
+      ],
+      [
+        31,
+        "male",
+        2,
+        "free",
+        "little",
+        {
+          "isNan": true
+        },
+        6110,
+        48,
+        "education"
+      ],
+      [
+        37,
+        "male",
+        2,
+        "own",
+        "little",
+        "rich",
+        2100,
+        18,
+        "radio/TV"
+      ],
+      [
+        37,
+        "male",
+        2,
+        "own",
+        "little",
+        "rich",
+        1225,
+        10,
+        "domestic appliances"
+      ],
+      [
+        24,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        458,
+        9,
+        "radio/TV"
+      ],
+      [
+        30,
+        "male",
+        3,
+        "own",
+        "quite rich",
+        {
+          "isNan": true
+        },
+        2333,
+        30,
+        "radio/TV"
+      ],
+      [
+        26,
+        "male",
+        2,
+        "own",
+        "quite rich",
+        "moderate",
+        1158,
+        12,
+        "radio/TV"
+      ],
+      [
+        44,
+        "male",
+        1,
+        "own",
+        "little",
+        "moderate",
+        6204,
+        18,
+        "repairs"
+      ],
+      [
+        24,
+        "male",
+        2,
+        "rent",
+        "moderate",
+        "little",
+        6187,
+        30,
+        "car"
+      ],
+      [
+        58,
+        "female",
+        1,
+        "free",
+        "little",
+        "little",
+        6143,
+        48,
+        "car"
+      ],
+      [
+        35,
+        "female",
+        3,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        1393,
+        11,
+        "car"
+      ],
+      [
+        39,
+        "male",
+        2,
+        "own",
+        "quite rich",
+        {
+          "isNan": true
+        },
+        2299,
+        36,
+        "radio/TV"
+      ],
+      [
+        23,
+        "female",
+        0,
+        "rent",
+        "quite rich",
+        "little",
+        1352,
+        6,
+        "car"
+      ],
+      [
+        39,
+        "male",
+        1,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        7228,
+        11,
+        "car"
+      ],
+      [
+        28,
+        "female",
+        2,
+        "own",
+        "moderate",
+        {
+          "isNan": true
+        },
+        2073,
+        12,
+        "radio/TV"
+      ],
+      [
+        29,
+        "male",
+        1,
+        "own",
+        {
+          "isNan": true
+        },
+        "moderate",
+        2333,
+        24,
+        "furniture/equipment"
+      ],
+      [
+        30,
+        "male",
+        3,
+        "own",
+        "little",
+        "moderate",
+        5965,
+        27,
+        "car"
+      ],
+      [
+        25,
+        "male",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        1262,
+        12,
+        "radio/TV"
+      ],
+      [
+        31,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        3378,
+        18,
+        "car"
+      ],
+      [
+        57,
+        "male",
+        2,
+        "free",
+        "little",
+        "moderate",
+        2225,
+        36,
+        "car"
+      ],
+      [
+        26,
+        "male",
+        1,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        783,
+        6,
+        "car"
+      ],
+      [
+        52,
+        "male",
+        3,
+        "own",
+        {
+          "isNan": true
+        },
+        "moderate",
+        6468,
+        12,
+        "radio/TV"
+      ],
+      [
+        31,
+        "female",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        9566,
+        36,
+        "radio/TV"
+      ],
+      [
+        23,
+        "female",
+        3,
+        "own",
+        "little",
+        "rich",
+        1961,
+        18,
+        "car"
+      ],
+      [
+        23,
+        "female",
+        1,
+        "rent",
+        "little",
+        "little",
+        6229,
+        36,
+        "furniture/equipment"
+      ],
+      [
+        27,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        1391,
+        9,
+        "business"
+      ],
+      [
+        50,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        "moderate",
+        1537,
+        15,
+        "radio/TV"
+      ],
+      [
+        61,
+        "male",
+        3,
+        "free",
+        "little",
+        "moderate",
+        1953,
+        36,
+        "business"
+      ],
+      [
+        25,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        14421,
+        48,
+        "business"
+      ],
+      [
+        26,
+        "female",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        3181,
+        24,
+        "radio/TV"
+      ],
+      [
+        48,
+        "male",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        5190,
+        27,
+        "repairs"
+      ],
+      [
+        29,
+        "female",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        2171,
+        12,
+        "radio/TV"
+      ],
+      [
+        22,
+        "male",
+        2,
+        "own",
+        "rich",
+        "moderate",
+        1007,
+        12,
+        "car"
+      ],
+      [
+        37,
+        "male",
+        2,
+        "free",
+        "little",
+        {
+          "isNan": true
+        },
+        1819,
+        36,
+        "education"
+      ],
+      [
+        25,
+        "female",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        2394,
+        36,
+        "radio/TV"
+      ],
+      [
+        30,
+        "female",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        8133,
+        36,
+        "car"
+      ],
+      [
+        46,
+        "male",
+        1,
+        "rent",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        730,
+        7,
+        "radio/TV"
+      ],
+      [
+        51,
+        "male",
+        3,
+        "free",
+        "little",
+        "little",
+        1164,
+        8,
+        "vacation/others"
+      ],
+      [
+        41,
+        "female",
+        1,
+        "own",
+        "little",
+        "moderate",
+        5954,
+        42,
+        "business"
+      ],
+      [
+        40,
+        "male",
+        3,
+        "own",
+        {
+          "isNan": true
+        },
+        "little",
+        1977,
+        36,
+        "education"
+      ],
+      [
+        66,
+        "male",
+        3,
+        "free",
+        "little",
+        "little",
+        1526,
+        12,
+        "car"
+      ],
+      [
+        34,
+        "male",
+        2,
+        "own",
+        "little",
+        "little",
+        3965,
+        42,
+        "radio/TV"
+      ],
+      [
+        51,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        4771,
+        11,
+        "radio/TV"
+      ],
+      [
+        39,
+        "male",
+        1,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        9436,
+        54,
+        "car"
+      ],
+      [
+        22,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        3832,
+        30,
+        "furniture/equipment"
+      ],
+      [
+        44,
+        "female",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        5943,
+        24,
+        "radio/TV"
+      ],
+      [
+        47,
+        "male",
+        2,
+        "own",
+        "quite rich",
+        {
+          "isNan": true
+        },
+        1213,
+        15,
+        "radio/TV"
+      ],
+      [
+        24,
+        "female",
+        1,
+        "rent",
+        "moderate",
+        {
+          "isNan": true
+        },
+        1568,
+        18,
+        "business"
+      ],
+      [
+        58,
+        "female",
+        1,
+        "own",
+        "little",
+        "little",
+        1755,
+        24,
+        "vacation/others"
+      ],
+      [
+        52,
+        "male",
+        1,
+        "own",
+        "little",
+        "little",
+        2315,
+        10,
+        "radio/TV"
+      ],
+      [
+        29,
+        "female",
+        3,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        1412,
+        12,
+        "business"
+      ],
+      [
+        27,
+        "female",
+        2,
+        "own",
+        "little",
+        "moderate",
+        1295,
+        18,
+        "furniture/equipment"
+      ],
+      [
+        47,
+        "male",
+        2,
+        "free",
+        "moderate",
+        "moderate",
+        12612,
+        36,
+        "education"
+      ],
+      [
+        30,
+        "male",
+        3,
+        "own",
+        "moderate",
+        "little",
+        2249,
+        18,
+        "car"
+      ],
+      [
+        28,
+        "male",
+        2,
+        "own",
+        "little",
+        "little",
+        1108,
+        12,
+        "repairs"
+      ],
+      [
+        56,
+        "male",
+        2,
+        "own",
+        "little",
+        {
+          "isNan": true
+        },
+        618,
+        12,
+        "radio/TV"
+      ],
+      [
+        54,
+        "male",
+        2,
+        "own",
+        "little",
+        "little",
+        1409,
+        12,
+        "car"
+      ],
+      [
+        33,
+        "female",
+        1,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        797,
+        12,
+        "radio/TV"
+      ],
+      [
+        20,
+        "male",
+        2,
+        "rent",
+        {
+          "isNan": true
+        },
+        "rich",
+        3617,
+        24,
+        "furniture/equipment"
+      ],
+      [
+        54,
+        "male",
+        2,
+        "own",
+        "rich",
+        "moderate",
+        1318,
+        12,
+        "car"
+      ],
+      [
+        58,
+        "male",
+        2,
+        "rent",
+        "little",
+        "moderate",
+        15945,
+        54,
+        "business"
+      ],
+      [
+        61,
+        "female",
+        2,
+        "own",
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        2012,
+        12,
+        "education"
+      ],
+      [
+        34,
+        "male",
+        2,
+        "own",
+        "moderate",
+        "moderate",
+        2622,
+        18,
+        "business"
+      ],
+      [
+        36,
+        "male",
+        2,
+        "own",
+        "little",
+        "moderate",
+        2337,
+        36,
+        "radio/TV"
+      ],
+      [
+        36,
+        "male",
+        3,
+        "rent",
+        {
+          "isNan": true
+        },
+        "moderate",
+        7057,
+        20,
+        "car"
+      ]
+    ],
+    "features": [
+      {
+        "name": "Age",
+        "index": 0,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Sex",
+        "index": 1,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Job",
+        "index": 2,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Housing",
+        "index": 3,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Saving accounts",
+        "index": 4,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Checking account",
+        "index": 5,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Credit amount",
+        "index": 6,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Duration",
+        "index": 7,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Purpose",
+        "index": 8,
+        "elementType": "str",
+        "featureType": "String Feature"
+      }
+    ],
+    "numberOfRows": 1000,
+    "numberOfColumns": 9,
+    "name": null
+  },
+  "statistics": {
+    "records": [
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ]
+    ],
+    "features": [
+      {
+        "name": "Mean",
+        "index": 0,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Median",
+        "index": 1,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Min",
+        "index": 2,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Max",
+        "index": 3,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Standard Deviation",
+        "index": 4,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Unique Values",
+        "index": 5,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Missing Values",
+        "index": 6,
+        "elementType": "float64",
+        "featureType": "Numeric Feature"
+      }
+    ],
+    "numberOfRows": 9,
+    "numberOfColumns": 7,
+    "name": null
+  },
+  "layout": {
+    "records": [
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ],
+      [
+        null,
+        null
+      ]
+    ],
+    "features": [
+      {
+        "name": "Histogram",
+        "index": 0,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      },
+      {
+        "name": "Boxplot",
+        "index": 1,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      }
+    ],
+    "numberOfRows": 9,
+    "numberOfColumns": 2,
+    "name": null
+  }
+}

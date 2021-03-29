@@ -1,0 +1,39 @@
+[
+  {
+    "Age": 67,
+    "Sex": "male",
+    "Job": 2,
+    "Housing": "own",
+    "Saving accounts": {
+      "isNan": true
+    },
+    "Checking account": "little",
+    "Credit amount": 1169,
+    "Duration": 6,
+    "Purpose": "radio/TV"
+  },
+  {
+    "Age": 22,
+    "Sex": "female",
+    "Job": 2,
+    "Housing": "own",
+    "Saving accounts": "little",
+    "Checking account": "moderate",
+    "Credit amount": 5951,
+    "Duration": 48,
+    "Purpose": "radio/TV"
+  },
+  {
+    "Age": 49,
+    "Sex": "male",
+    "Job": 1,
+    "Housing": "own",
+    "Saving accounts": "little",
+    "Checking account": {
+      "isNan": true
+    },
+    "Credit amount": 2096,
+    "Duration": 12,
+    "Purpose": "education"
+  }
+]

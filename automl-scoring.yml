@@ -1,0 +1,32 @@
+$schema: http://azureml/sdk-2-0/CommandComponent.json
+name: AutoML Scoring
+version: 0.0.1
+display_name: AutoML Scoring
+type: CommandComponent
+is_deterministic: true
+tags:
+  type : Inferencing
+inputs:
+  input_data:
+    type: DataFrameDirectory
+    optional: false
+  experiment:
+    type: String
+    optional: false
+    description: AutoML experiment name
+  run_id:
+    type: String
+    optional: false
+    description: AutoML run id
+outputs:
+  predictions_data:
+    type: DataFrameDirectory
+    optional: false
+command: >-
+  python automl-scoring.py --input_data {inputs.input_data} --predictions_data {outputs.predictions_data} --experiment {inputs.experiment} --run_id {inputs.run_id}
+environment:
+  docker:
+    image: mcr.microsoft.com/azureml/intelmpi2018.3-ubuntu16.04
+  conda:
+    conda_dependencies_file: conda.yaml
+  os: Linux
