@@ -8,13 +8,13 @@ from azureml.core import Workspace, Experiment, Run
 from azureml.studio.core.io.data_frame_directory import load_data_frame_from_directory, save_data_frame_to_directory
 
 # Parse args
-def parse_args(argv=None):
+def parse_args():
     parser = argparse.ArgumentParser("AutoML-Scoring")
     parser.add_argument("--input_data", type=str, help="Input data")
     parser.add_argument("--predictions_data", type=str, help="Predictions data")
     parser.add_argument("--experiment", type=str, help="AutoML experiment name")
     parser.add_argument("--run_id", type=str, help="Run Id")
-    return parser.parse_args(argv)
+    return parser.parse_args()
 
 def predict(args):
 
