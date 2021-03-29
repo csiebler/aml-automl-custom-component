@@ -48,7 +48,10 @@ model = joblib.load(model_path)
 print("Using model to score input data...")
 
 if (isForecasting):
-    results = model.forecast(df)
+    y_query = None
+    if 'y_query' in data.columns:
+        y_query = data.pop('y_query').values
+    results = model.forecast(df, y_query)
 else:
     results = model.predict(df)
 
