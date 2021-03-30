@@ -3,6 +3,7 @@
 .azureml/
 model.pkl
 temp/
+output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

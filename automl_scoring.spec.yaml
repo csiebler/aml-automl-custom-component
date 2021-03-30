@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_scoring
-version: 0.1.0
+version: 0.1.1
 display_name: AutoML Scoring
 type: CommandComponent
 is_deterministic: true
@@ -14,11 +14,11 @@ inputs:
   experiment:
     type: String
     optional: false
-    description: AutoML experiment name
+    description: AutoML experiment name (e.g., my_project_automl)
   run_id:
     type: String
     optional: false
-    description: AutoML run id
+    description: AutoML run id of the model you want to use (e.g., AutoML_3b9e2e2e-b2e4-4770-b261-0ec285f03276_2)
 outputs:
   predictions_data:
     type: DataFrameDirectory

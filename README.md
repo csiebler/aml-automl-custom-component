@@ -1,8 +1,19 @@
 # aml-automl-custom-component
 
-A custom component for using AutoML in Designer for Batch Scoring. Import via the `Modules` capability in Azure Machine Learning Studio (point it to `https://github.com/csiebler/aml-automl-custom-component/blob/main/automl_scoring.spec.yaml`) and then use in Azure Machine Learning Designer.
+A custom component for using AutoML in Designer for Batch Scoring. It supports the following AutoML models:
+
+* Classification
+* Regression
+* Forecasting
 
 ![alt text](media/screenshot.png "Screenshot of the custom component")
+
+## Instructions
+
+1. Import via the `Modules` capability in Azure Machine Learning Studio (point it to `https://github.com/csiebler/aml-automl-custom-component/blob/main/automl_scoring.spec.yaml`) 
+1. Then use in Azure Machine Learning Designer
+1. Specify our AutoML experiment name, e.g., `automl-credit` and point it to the `run_id` of the model you want to use, e.g. `AutoML_13528b38-bfe2-449e-9b43-967de35ecb3f_0`
+
 
 ## Running locally and testing
 
