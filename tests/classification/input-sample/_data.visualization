@@ -1,6 +1,65 @@
 {
   "visualizationType": "default",
   "data": {
+    "name": null,
+    "numberOfColumns": 9,
+    "numberOfRows": 1000,
+    "features": [
+      {
+        "name": "Age",
+        "index": 0,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Sex",
+        "index": 1,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Job",
+        "index": 2,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Housing",
+        "index": 3,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Saving accounts",
+        "index": 4,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Checking account",
+        "index": 5,
+        "elementType": "str",
+        "featureType": "String Feature"
+      },
+      {
+        "name": "Credit amount",
+        "index": 6,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Duration",
+        "index": 7,
+        "elementType": "int64",
+        "featureType": "Numeric Feature"
+      },
+      {
+        "name": "Purpose",
+        "index": 8,
+        "elementType": "str",
+        "featureType": "String Feature"
+      }
+    ],
     "records": [
       [
         67,
@@ -1214,277 +1273,12 @@
         20,
         "car"
       ]
-    ],
-    "features": [
-      {
-        "name": "Age",
-        "index": 0,
-        "elementType": "int64",
-        "featureType": "Numeric Feature"
-      },
-      {
-        "name": "Sex",
-        "index": 1,
-        "elementType": "str",
-        "featureType": "String Feature"
-      },
-      {
-        "name": "Job",
-        "index": 2,
-        "elementType": "int64",
-        "featureType": "Numeric Feature"
-      },
-      {
-        "name": "Housing",
-        "index": 3,
-        "elementType": "str",
-        "featureType": "String Feature"
-      },
-      {
-        "name": "Saving accounts",
-        "index": 4,
-        "elementType": "str",
-        "featureType": "String Feature"
-      },
-      {
-        "name": "Checking account",
-        "index": 5,
-        "elementType": "str",
-        "featureType": "String Feature"
-      },
-      {
-        "name": "Credit amount",
-        "index": 6,
-        "elementType": "int64",
-        "featureType": "Numeric Feature"
-      },
-      {
-        "name": "Duration",
-        "index": 7,
-        "elementType": "int64",
-        "featureType": "Numeric Feature"
-      },
-      {
-        "name": "Purpose",
-        "index": 8,
-        "elementType": "str",
-        "featureType": "String Feature"
-      }
-    ],
-    "numberOfRows": 1000,
-    "numberOfColumns": 9,
-    "name": null
+    ]
   },
   "statistics": {
-    "records": [
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ],
-      [
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        },
-        {
-          "isNan": true
-        }
-      ]
-    ],
+    "name": null,
+    "numberOfColumns": 7,
+    "numberOfRows": 9,
     "features": [
       {
         "name": "Mean",
@@ -1529,11 +1323,234 @@
         "featureType": "Numeric Feature"
       }
     ],
-    "numberOfRows": 9,
-    "numberOfColumns": 7,
-    "name": null
+    "records": [
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ],
+      [
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        },
+        {
+          "isNan": true
+        }
+      ]
+    ]
   },
   "layout": {
+    "name": null,
+    "numberOfColumns": 2,
+    "numberOfRows": 9,
+    "features": [
+      {
+        "name": "Histogram",
+        "index": 0,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      },
+      {
+        "name": "Boxplot",
+        "index": 1,
+        "elementType": "object",
+        "featureType": "Object Feature"
+      }
+    ],
     "records": [
       [
         null,
@@ -1571,23 +1588,6 @@
         null,
         null
       ]
-    ],
-    "features": [
-      {
-        "name": "Histogram",
-        "index": 0,
-        "elementType": "object",
-        "featureType": "Object Feature"
-      },
-      {
-        "name": "Boxplot",
-        "index": 1,
-        "elementType": "object",
-        "featureType": "Object Feature"
-      }
-    ],
-    "numberOfRows": 9,
-    "numberOfColumns": 2,
-    "name": null
+    ]
   }
 }
