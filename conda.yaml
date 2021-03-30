@@ -17,3 +17,4 @@ dependencies:
   - azureml-interpret==1.24.0
   - azureml-defaults==1.24.0
   - azureml-designer-core==0.0.59
+  - xgboost==1.1.1
