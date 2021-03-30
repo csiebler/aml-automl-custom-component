@@ -14,7 +14,6 @@ A custom component for using AutoML in Designer for Batch Scoring. It supports t
 1. Then use in Azure Machine Learning Designer
 1. Specify our AutoML experiment name, e.g., `automl-credit` and point it to the `run_id` of the model you want to use, e.g. `AutoML_13528b38-bfe2-449e-9b43-967de35ecb3f_0`
 
-
 ## Running locally and testing
 
 First, install the `conda` env needed to run the code locally:
