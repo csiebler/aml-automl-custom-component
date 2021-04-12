@@ -63,23 +63,32 @@ def predict(args):
         'prediction': [],
     }
     
-    # TODO: add detailed predictions if args.detailed_predictions == true
-
     for file in files:
         print(f"Scoring file {file}")
         file_path = os.path.join(args.input_data, file)      
         data = open(file_path, 'rb').read()
-        result = run_inference(model, data, _score_with_model)
-        result = json.loads(result)
-        print(result)
+        prediction_result = run_inference(model, data, _score_with_model)
+        prediction_result = json.loads(prediction_result)
+        print(prediction_result)
         
-        index, element = max(enumerate(result['probs']), key=itemgetter(1))
-        prediction_class = result['labels'][index]
+        # Get argmax of prediction
+        index, element = max(enumerate(prediction_result['probs']), key=itemgetter(1))
+        prediction_class = prediction_result['labels'][index]
+        
+        # Add results to output results
         results['filename'].append(file)
         results['prediction'].append(prediction_class)
         
-    results_df = pd.DataFrame(results)
+        # Add details if needed
+        if (args.detailed_predictions.lower() in ('yes', 'true', 't', 'y', '1')):
+            for i, label in enumerate(prediction_result['labels']):
+                if label not in results:
+                    results[label] = []
+                    print(results)
+                results[label].append(prediction_result['probs'][i])
         
+    results_df = pd.DataFrame(results)
+
     print("This is how your data looks like:")
     print(results_df.head())
 

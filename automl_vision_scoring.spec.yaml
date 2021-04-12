@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_vision_scoring
-version: 0.0.1
+version: 0.0.2
 display_name: AutoML Vision Scoring
 type: CommandComponent
 is_deterministic: true
@@ -23,6 +23,7 @@ inputs:
     type: Boolean
     optional: false
     description: Output detailed predictions with probabilities
+    default: False
 outputs:
   predictions_data:
     type: DataFrameDirectory
