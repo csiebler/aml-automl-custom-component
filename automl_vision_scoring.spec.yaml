@@ -33,7 +33,6 @@ command: >-
     --predictions_data {outputs.predictions_data} 
     --experiment {inputs.experiment} 
     --run_id {inputs.run_id}
-    --detailed_predictions {input.detailed_predictions} 
 environment:
   docker:
     image: mcr.microsoft.com/azureml/intelmpi2018.3-ubuntu16.04
