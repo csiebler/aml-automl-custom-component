@@ -20,10 +20,9 @@ inputs:
     optional: false
     description: AutoML Vision run id of the model you want to use (e.g., AutoML_53a96f75-6f8b-48c5-8dc5-0944a3d5cf68_HD_3)
   detailed_predictions:
-    description: Output detailed predictions with probabilities
-    optional: false
     type: Boolean
-    default: false
+    optional: false
+    description: Output detailed predictions with probabilities
 outputs:
   predictions_data:
     type: DataFrameDirectory
