@@ -1,10 +1,14 @@
 # aml-automl-custom-component
 
-A custom component for using AutoML in Designer for Batch Scoring. It supports the following AutoML models:
+A set of custom components for using AutoML and AutoML Vision in Designer for Batch Scoring. It supports the following AutoML models:
 
 * Classification
 * Regression
 * Forecasting
+
+For AutoML Vision, it supports:
+
+* Image Classification (using AutoML Vision)
 
 ![alt text](media/screenshot.png "Screenshot of the custom component")
 

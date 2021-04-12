@@ -1,0 +1,45 @@
+$schema: http://azureml/sdk-2-0/CommandComponent.json
+name: automl_vision_scoring
+version: 0.0.1
+display_name: AutoML Vision Scoring
+type: CommandComponent
+is_deterministic: true
+tags:
+  AutoML Vision:
+  Scoring:
+inputs:
+  input_data:
+    type: AnyDirectory
+    optional: false
+  experiment:
+    type: String
+    optional: false
+    description: AutoML Vision experiment name (e.g., my_project_vision_automl)
+  run_id:
+    type: String
+    optional: false
+    description: AutoML Vision run id of the model you want to use (e.g., AutoML_53a96f75-6f8b-48c5-8dc5-0944a3d5cf68_HD_3)
+  detailed_predictions:
+    description: Output detailed predictions with probabilities
+    optional: false
+    type: Boolean
+    default: false
+outputs:
+  predictions_data:
+    type: DataFrameDirectory
+    optional: false
+command: >-
+  python automl_vision_scoring.py 
+    --input_data {inputs.input_data} 
+    --predictions_data {outputs.predictions_data} 
+    --experiment {inputs.experiment} 
+    --run_id {inputs.run_id}
+    --detailed_predictions {input.detailed_predictions} 
+environment:
+  docker:
+    image: mcr.microsoft.com/azureml/intelmpi2018.3-ubuntu16.04
+    #image: mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.0.3-cudnn8-ubuntu18.04
+    #image: mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04:20201112.v1
+  conda:
+    conda_dependencies_file: conda_vision.yaml
+  os: Linux
