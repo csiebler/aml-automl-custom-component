@@ -19,10 +19,10 @@ inputs:
     type: String
     optional: false
     description: AutoML Vision run id of the model you want to use (e.g., AutoML_53a96f75-6f8b-48c5-8dc5-0944a3d5cf68_HD_3)
-  # detailed_predictions:
-  #   type: Boolean
-  #   optional: false
-  #   description: Output detailed predictions with probabilities
+  detailed_predictions:
+    type: Boolean
+    optional: false
+    description: Output detailed predictions with probabilities
 outputs:
   predictions_data:
     type: DataFrameDirectory
@@ -33,6 +33,7 @@ command: >-
     --predictions_data {outputs.predictions_data} 
     --experiment {inputs.experiment} 
     --run_id {inputs.run_id}
+    --detailed_predictions {inputs.detailed_predictions} 
 environment:
   docker:
     image: mcr.microsoft.com/azureml/intelmpi2018.3-ubuntu16.04
