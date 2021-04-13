@@ -16,7 +16,9 @@ For AutoML Vision, it supports:
 
 ## Instructions
 
-1. Import via the `Modules` capability in Azure Machine Learning Studio (point it to `https://github.com/csiebler/aml-automl-custom-component/blob/main/automl_scoring.spec.yaml`) 
+1. Import via the `Modules` capability in Azure Machine Learning Studio, point it to:
+    * AutoML - `https://github.com/csiebler/aml-automl-custom-component/blob/main/automl_scoring.spec.yaml`
+    * AutoML Vision - `https://github.com/csiebler/aml-automl-custom-component/blob/main/automl_vision_scoring.spec.yaml`
 1. Then use in Azure Machine Learning Designer
 1. Specify our AutoML experiment name, e.g., `automl-credit` and point it to the `run_id` of the model you want to use, e.g. `AutoML_13528b38-bfe2-449e-9b43-967de35ecb3f_0`
 
