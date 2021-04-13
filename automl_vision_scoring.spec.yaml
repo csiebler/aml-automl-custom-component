@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_vision_scoring
-version: 0.0.2
+version: 0.0.3
 display_name: AutoML Vision Scoring
 type: CommandComponent
 is_deterministic: true
@@ -11,6 +11,16 @@ inputs:
   input_data:
     type: AnyDirectory
     optional: false
+  include_subfolders:
+    type: Boolean
+    optional: false
+    description: Include images in all subfolders
+    default: True
+  file_extension:
+    type: String
+    optional: false
+    description: File extension of image files
+    default: jpg
   experiment:
     type: String
     optional: false
@@ -31,6 +41,8 @@ outputs:
 command: >-
   python automl_vision_scoring.py 
     --input_data {inputs.input_data} 
+    --include_subfolders {inputs.include_subfolders} 
+    --file_extension {inputs.file_extension} 
     --predictions_data {outputs.predictions_data} 
     --experiment {inputs.experiment} 
     --run_id {inputs.run_id}

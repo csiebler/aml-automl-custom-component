@@ -1,4 +1,5 @@
 import os, sys
+import glob
 import json
 import argparse
 import pandas as pd
@@ -16,19 +17,33 @@ from azureml.contrib.automl.dnn.vision.classification.inference.score import _sc
 def parse_args():
     parser = argparse.ArgumentParser("AutoML-Vision-Scoring")
     parser.add_argument("--input_data", type=str, help="Input data")
+    parser.add_argument("--include_subfolders", type=str, help="List files in subfolders")
+    parser.add_argument("--file_extension", type=str, help="File extension, e.g. jpg or png")
     parser.add_argument("--predictions_data", type=str, help="Predictions data")
     parser.add_argument("--experiment", type=str, help="AutoML experiment name")
     parser.add_argument("--detailed_predictions", type=str, help="Detailed predictions")
     parser.add_argument("--run_id", type=str, help="Run Id")
     return parser.parse_args()
 
+def get_files_to_score(input_path, file_extension='jpg', include_subfolders=True):
+    if include_subfolders:
+        search_path = os.path.join(input_path, '**/*.' + file_extension)
+        print(search_path)
+        files = glob.glob(search_path, recursive=True)
+    else:
+        search_path = os.path.join(input_path, '*.' + file_extension)
+        print(search_path)
+        files = glob.glob(search_path)
+    return files
+
 def predict(args):
 
-    # TODO: Add file extension flag and subdirectory mode
     # List files that need to be scored
-    files = os.listdir(args.input_data)
+    include_subfolders = (args.include_subfolders.lower() in ('yes', 'true', 't', 'y', '1'))
+    file_extension = args.file_extension.lower()
+    files = get_files_to_score(args.input_data, file_extension, include_subfolders)
     print(f"Files: {files}")
-
+    
     # Get AutoML Vision run
     run = Run.get_context()
     if (isinstance(run, azureml.core.run._OfflineRun)):
@@ -65,8 +80,8 @@ def predict(args):
     
     for file in files:
         print(f"Scoring file {file}")
-        file_path = os.path.join(args.input_data, file)      
-        data = open(file_path, 'rb').read()
+        #file_path = os.path.join(args.input_data, file)      
+        data = open(file, 'rb').read()
         prediction_result = run_inference(model, data, _score_with_model)
         prediction_result = json.loads(prediction_result)
         print(prediction_result)
@@ -84,7 +99,6 @@ def predict(args):
             for i, label in enumerate(prediction_result['labels']):
                 if label not in results:
                     results[label] = []
-                    print(results)
                 results[label].append(prediction_result['probs'][i])
         
     results_df = pd.DataFrame(results)
