@@ -9,6 +9,7 @@ A set of custom components for using AutoML and AutoML Vision in Designer for Ba
 For AutoML Vision, it supports:
 
 * Image Classification (using AutoML Vision)
+* Object Detection (using AutoML Vision)
 
 ![alt text](media/screenshot.png "Screenshot of the custom component")
 
