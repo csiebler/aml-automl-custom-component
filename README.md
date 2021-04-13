@@ -12,6 +12,7 @@ For AutoML Vision, it supports:
 * Object Detection (using AutoML Vision)
 
 ![alt text](media/screenshot.png "Screenshot of the custom component")
+![alt text](media/screenshot_vision.png "Screenshot of the custom component")
 
 ## Instructions
 
@@ -46,7 +47,7 @@ os.makedirs("input-sample", exist_ok=True)
 save_data_frame_to_directory("./input-sample", df)
 ```
 
-Alternatively, you can run the acceptance tests. However, you will first need to update the `experiments` and `run_ids` in [`tests/test_acceptance.py`](tests/test_acceptance.py):
+Alternatively, you can run the acceptance tests. However, you will first need to update the `experiments` and `run_ids` in [`tests/*.py`](tests/):
 
 ```cli
 $ pytest
