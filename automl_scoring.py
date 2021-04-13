@@ -7,7 +7,8 @@ import azureml.automl.core
 from azureml.core import Workspace, Experiment, Run
 from azureml.studio.core.io.data_frame_directory import load_data_frame_from_directory, save_data_frame_to_directory
 
-# Parse args
+import automl_helper
+
 def parse_args():
     parser = argparse.ArgumentParser("AutoML-Scoring")
     parser.add_argument("--input_data", type=str, help="Input data")
@@ -21,28 +22,15 @@ def predict(args):
     # Load data that needs to be scored
     df = load_data_frame_from_directory(args.input_data).data
 
-    # Get AutoML run
-    run = Run.get_context()
-    if (isinstance(run, azureml.core.run._OfflineRun)):
-        ws = Workspace.from_config()
-    else:
-        ws = run.experiment.workspace
-    print(f"Retrieved access to workspace {ws}")
+    # Connect to workspace
+    ws = automl_helper.get_workspace()
 
-    try:
-        experiment = Experiment(ws, args.experiment)
-        automl_run = Run(experiment, args.run_id)
-        properties = automl_run.properties
-    except Exception as e:
-        raise
+    # Get AutoML run details
+    automl_run = automl_helper.get_automl_run(ws, args.experiment, args.run_id)
+    properties = automl_run.properties
 
-    if (properties['runTemplate'] != "automl_child"):
-        raise RuntimeError(f"Run with run_id={args.run_id} is a not an AutoML run!")
-
-    print("Downloading AutoML model...")
-    automl_run.download_file('outputs/model.pkl', output_file_path='./')
-    model_path = './model.pkl'
-    model = joblib.load(model_path)
+    # Load AutoML model
+    model = automl_helper.load_automl_model(automl_run)
 
     # Score data
     print("Using model to score input data...")
@@ -59,14 +47,10 @@ def predict(args):
         results = model.predict(df)
         
     results_df = pd.DataFrame(results, columns=['Predictions'])
-        
-    print("This is how your data looks like:")
-    print(results_df.head())
+    print(f"This is how your prediction data looks like:\n{results_df.head()}")
 
     # Write results back
-    print("Writing predictions back...")
-    os.makedirs(args.predictions_data, exist_ok=True)
-    save_data_frame_to_directory(args.predictions_data, results_df)
+    automl_helper.write_prediction_dataframe(args.predictions_data, results_df)
 
 if __name__ == '__main__':
     args = parse_args()

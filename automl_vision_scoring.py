@@ -1,6 +1,6 @@
 import os, sys
 import glob
-import json
+
 import argparse
 import pandas as pd
 from sklearn.externals import joblib
@@ -9,10 +9,10 @@ from operator import itemgetter
 import azureml.automl.core
 from azureml.core import Workspace, Experiment, Run
 from azureml.studio.core.io.data_frame_directory import load_data_frame_from_directory, save_data_frame_to_directory
-
 from azureml.contrib.automl.dnn.vision.common.model_export_utils import load_model, run_inference
 
-# Parse args
+import automl_helper
+
 def parse_args():
     parser = argparse.ArgumentParser("AutoML-Vision-Scoring")
     parser.add_argument("--input_data", type=str, help="Input data")
@@ -43,41 +43,16 @@ def predict(args):
     files = get_files_to_score(args.input_data, file_extension, include_subfolders)
     print(f"Files: {files}")
     
-    # Get AutoML Vision run
-    run = Run.get_context()
-    if (isinstance(run, azureml.core.run._OfflineRun)):
-        ws = Workspace.from_config()
-    else:
-        ws = run.experiment.workspace
-    print(f"Retrieved access to workspace {ws}")
+    # Connect to workspace
+    ws = automl_helper.get_workspace()
 
-    # Try to read run details
-    try:
-        experiment = Experiment(ws, args.experiment)
-        automl_run = Run(experiment, args.run_id)
-        properties = automl_run.properties
-    except Exception as e:
-        raise
-
-    # TODO: Check if run is actually an AutoML Vision run
-    if (properties['runTemplate'] != "automl_child"):
-        raise RuntimeError(f"Run with run_id={args.run_id} is a not an AutoML run!")
+    # Get AutoML run details
+    automl_run = automl_helper.get_automl_run(ws, args.experiment, args.run_id)
+    properties = automl_run.properties
     
+    # Load model
     task = args.task_type
-   
-    if (task == 'image-classification'):
-        from azureml.contrib.automl.dnn.vision.classification.inference.score import _score_with_model
-        model_settings = {}
-    elif (task == 'image-object-detection'):
-        from azureml.contrib.automl.dnn.vision.object_detection_yolo.writers.score import _score_with_model
-        model_settings = {"box_score_thresh": 0.4, "box_iou_thresh": 0.5}
-    else:
-        print("Not supported yet")
-
-    print("Downloading AutoML Vision model...")
-    automl_run.download_file('outputs/model.pt', output_file_path='./')
-    print("Loding AutoML Vision model...")
-    model = load_model(task, './model.pt', **model_settings)
+    model = automl_helper.load_automl_vision_model(automl_run, task)
 
     # Score data
     print("Using vision model to score input data...")
@@ -94,11 +69,8 @@ def predict(args):
         results['bottomY'] = []
     
     for file in files:
-        print(f"Scoring file {file}")
-        data = open(file, 'rb').read()
-        prediction_result = run_inference(model, data, _score_with_model)
-        prediction_result = json.loads(prediction_result)
-        print(f"Predicted: {prediction_result} for {file}")
+
+        prediction_result = automl_helper.score_automl_vision_model(model, file)
         
         if (task == 'image-classification'):
             # Get argmax of prediction
@@ -127,17 +99,13 @@ def predict(args):
                 results['bottomX'].append(box['box']['bottomX'])
                 results['bottomY'].append(box['box']['bottomY'])
         else:
-            print("Not supported yet")
+            raise RuntimeError("Only task types image-classification and image-object-detection are currently supported!")
         
     results_df = pd.DataFrame(results)
-
-    print("This is how your data looks like:")
-    print(results_df.head())
+    print(f"This is how your prediction data looks like:\n{results_df.head()}")
 
     # Write results back
-    print("Writing predictions back...")
-    os.makedirs(args.predictions_data, exist_ok=True)
-    save_data_frame_to_directory(args.predictions_data, results_df)
+    automl_helper.write_prediction_dataframe(args.predictions_data, results_df)
 
 if __name__ == '__main__':
     args = parse_args()

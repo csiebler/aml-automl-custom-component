@@ -2,6 +2,7 @@
 
 .azureml/
 model.pkl
+model.pt
 temp/
 output/
 
