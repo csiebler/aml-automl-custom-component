@@ -59,3 +59,4 @@ $ pytest
 
 * Only connect input data with the same columns as used during AutoML training
 * Scoring is currently not scaled to multiple nodes
+* AutoML Vision scoring currently does not yet support GPU
