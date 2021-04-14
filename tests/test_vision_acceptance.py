@@ -14,7 +14,7 @@ def test_image_classification():
         task_type='image-classification',
         predictions_data=temp_dir.name,
         experiment="automl-vision",
-        run_id="AutoML_53a96f75-6f8b-48c5-8dc5-0944a3d5cf68_HD_3")
+        run_id="AutoML_556b350d-bf4e-42a2-9ea4-79e0dfbe4a84_HD_0")
     predict(args)
     files = os.listdir(temp_dir.name)
     assert '_data.parquet' in files
@@ -27,7 +27,7 @@ def test_object_detection():
         task_type='image-object-detection',
         predictions_data=temp_dir.name,
         experiment="automl-vision",
-        run_id="AutoML_9f62d9c1-acf8-4829-aaba-a0b4ca32ce7a_HD_0")
+        run_id="AutoML_d92dae85-db77-4366-8363-a60e7093a38b_HD_0")
     predict(args)
     files = os.listdir(temp_dir.name)
     assert '_data.parquet' in files

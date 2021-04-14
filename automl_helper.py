@@ -21,14 +21,20 @@ def get_automl_run(workspace, experiment, run_id):
     try:
         experiment = Experiment(workspace, experiment)
         automl_run = Run(experiment, run_id)
+
+        if ('runTemplate' not in automl_run.properties or automl_run.properties['runTemplate'] != "automl_child"):
+            raise RuntimeError(f"Run with run_id={run_id} is a not an AutoML run!")
+
+        # Get parent run
         parent_run = automl_run.parent
+        while (parent_run.parent is not None):
+            parent_run = parent_run.parent
+        
         if (parent_run.type != 'automl'):
-            raise(f"Only AutoML runs are supported, this run is of type {parent_run.type}")       
+            raise RuntimeError(f"Only AutoML runs are supported, this run is of type {parent_run.type}!")
     except Exception as e:
         raise
-    
-    if (automl_run.properties['runTemplate'] != "automl_child"):
-        raise RuntimeError(f"Run with run_id={run_id} is a not an AutoML run!")
+
     return automl_run
 
 def load_automl_model(automl_run):
