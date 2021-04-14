@@ -21,6 +21,9 @@ def get_automl_run(workspace, experiment, run_id):
     try:
         experiment = Experiment(workspace, experiment)
         automl_run = Run(experiment, run_id)
+        parent_run = automl_run.parent
+        if (parent_run.type != 'automl'):
+            raise(f"Only AutoML runs are supported, this run is of type {parent_run.type}")       
     except Exception as e:
         raise
     

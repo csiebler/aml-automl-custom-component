@@ -34,9 +34,8 @@ def predict(args):
 
     # Score data
     print("Using model to score input data...")
-    
-    isForecasting = ('fitted_pipeline' in automl_run.properties and automl_run.properties['fitted_pipeline'].startswith('ForecastingPipelineWrapper'))
 
+    isForecasting = isinstance(model, azureml.automl.runtime.shared.model_wrappers.ForecastingPipelineWrapper)
     if (isForecasting):
         y_query = None
         if 'y_query' in df.columns:
