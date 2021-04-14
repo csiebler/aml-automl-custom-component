@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_scoring
-version: 0.1.3
+version: 0.1.4
 display_name: AutoML Scoring
 type: CommandComponent
 is_deterministic: true
