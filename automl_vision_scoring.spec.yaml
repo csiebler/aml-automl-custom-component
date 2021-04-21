@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_vision_scoring
-version: 0.1.7
+version: 0.1.8
 display_name: AutoML Vision Scoring
 type: CommandComponent
 is_deterministic: true
