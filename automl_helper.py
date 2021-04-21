@@ -6,6 +6,7 @@ from sklearn.externals import joblib
 
 from azureml.core import Workspace, Experiment, Run
 from azureml.studio.core.io.data_frame_directory import load_data_frame_from_directory, save_data_frame_to_directory
+from azureml.contrib.automl.dnn.vision.common.model_export_utils import load_model, run_inference
 
 def get_workspace():
     run = Run.get_context()
@@ -44,9 +45,6 @@ def load_automl_model(automl_run):
     return model
     
 def load_automl_vision_model(automl_run, task):
-    
-    from azureml.contrib.automl.dnn.vision.common.model_export_utils import load_model, run_inference
-    
     if (task == 'image-classification'):
         from azureml.contrib.automl.dnn.vision.classification.inference.score import _score_with_model
         model_settings = {}
