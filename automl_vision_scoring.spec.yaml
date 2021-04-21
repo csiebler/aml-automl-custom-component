@@ -1,6 +1,6 @@
 $schema: http://azureml/sdk-2-0/CommandComponent.json
 name: automl_vision_scoring
-version: 0.1.6
+version: 0.1.7
 display_name: AutoML Vision Scoring
 type: CommandComponent
 is_deterministic: true
@@ -54,5 +54,5 @@ environment:
     #image: mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.0.3-cudnn8-ubuntu18.04
     #image: mcr.microsoft.com/azureml/openmpi3.1.2-cuda10.1-cudnn7-ubuntu18.04:20201112.v1
   conda:
-    conda_dependencies_file: conda_vision.yaml
+    conda_dependencies_file: conda.yaml
   os: Linux
